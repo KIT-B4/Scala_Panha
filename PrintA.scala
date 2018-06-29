@@ -10,5 +10,7 @@ object PrintA{
       }
     name.foreach(c => (if(c.length()== 4) println("Yes") else println("No") ))
     name.foreach(c => (if(c.length()> 3) println("Yes") else println("No")))
+    var a = name.filter(_.length>3)
+    println(a)
   }
 }
